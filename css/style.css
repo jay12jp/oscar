@@ -19,9 +19,15 @@ body * {
   font-family: inherit;
 }
 
-a {
+/* a {
   color: #000;
-  text-decoration: none;
+} */
+
+.section-padding {
+  width: 100%;
+  padding: 0 100px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* FLEX */
@@ -32,6 +38,7 @@ a {
 
 .flex-center {
   justify-content: center;
+  align-items: center;
 }
 
 .flex-space-between {
@@ -40,6 +47,30 @@ a {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-items-start {
+  align-items: flex-start;
 }
 
 /* TOP-NAV-BAR */
@@ -61,19 +92,114 @@ a {
 }
 
 /* SECOND NAV BAR */
-.second-nav-bar {
-width: 1440px;
-height: 61px;
-padding-left:  40px;
-padding-right: 40px;
+.second-nav-bar-right a:not(.small-button) {
+  display: inline-block;
+  padding: 30px 10px;
 }
 
-.second-nav-bar-top-left a:first-child {
-  width: 85px;
-  height: 60px;
+.second-nav-bar-top-left nav:first-child span {
   color: #003bde;
+  font-size: 17.5px;
 }
 
-.second-nav-bar-top-left a:nth-child(2) {
+.second-nav-bar-right nav:last-child a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+.second-nav-bar-right nav:last-child .icon {
+  font-size: 11px;
+}
+
+
+/* .second-nav-bar-top-left a:nth-child(2) {
+
+} */
+
+.small-button {
+  display: inline-block;
+  border: 1px solid #dee1e5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.large-button {
+  display: inline-block;
+  border: 1px solid #dee1e5;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 200px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.light-button {
+  border: 1px solid #dee1e5;
+  color: #003bde;
+  transition: border 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.light-button:hover {
+  border: 1px solid #003bde;
+}
+
+.light-to-clear-button {
+  background-color: rgba(255, 255, 255, 1);
+  color: #003bde;
+  transition: background-color .5s, color .5s;
+}
+
+.light-to-clear-button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+/* Hero */
+
+/* Hero */
+.Hero {
+  height: 500px;
+}
+
+.Hero > div {
+  height: 100%;
+  width: 50%;
+}
+
+.Hero > div > div {
+  width: 640px;
+}
+
+.Hero h2 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.Hero > div:first-child {
+  background-image: url("../images/hero/desktop-hero-1.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Hero > div:first-child > div {
+  /* width: 640px; */
+  padding-left: 100px;
+}
+
+.Hero > div:last-child {
+  background-image: url('../images/hero/desktop-hero-2.jpg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Hero > div:last-child > div {
+  padding-right: 100px;
+  padding-left: 75px;
 }
