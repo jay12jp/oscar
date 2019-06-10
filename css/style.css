@@ -266,6 +266,10 @@ body * {
   background-image: url(../images/background-images/background-3.jpg);
 }
 
+.tile-6 {
+  margin-bottom: 40px;
+}
+
 .tile-6-left {
   height: 420px;
   border: 1px solid #d8d8d8;
@@ -294,4 +298,8 @@ body * {
   width: 530px;
   margin-right: 30px;
   border-radius: 20px;
+}
+
+.tile-7 {
+  padding-left: 30px;
 }
