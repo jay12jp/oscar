@@ -271,6 +271,8 @@ body * {
   border: 1px solid #d8d8d8;
   text-align: center;
   width: 530px;
+  margin-right: 30px;
+  border-radius: 20px;
 }
 
 .tile-6-left img {
@@ -290,4 +292,6 @@ body * {
   border: 1px solid #d8d8d8;
   text-align: center;
   width: 530px;
+  margin-right: 30px;
+  border-radius: 20px;
 }
