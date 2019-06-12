@@ -253,7 +253,12 @@ body * {
 
 .background-image-third-tile-1 {
   width: 100%;
+  padding: 150px 0px;
+  /* height: 400px; */
   background-image: url(../images/background-images/background-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .background-image-fourth-tile-1 {
